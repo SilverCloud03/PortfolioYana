@@ -99,9 +99,6 @@ export default function Hero() {
         <div className="relative z-10 flex flex-col h-full">
           <nav className="w-full px-5 sm:px-6 md:px-12 lg:px-16 py-4 sm:py-5">
               <div className="flex items-center justify-between">
-                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <path d="M14 2L26 14L14 26L2 14L14 2Z" fill="#111827" fillOpacity="0.9" />
-                </svg>
 
               <div className="hidden md:flex items-center justify-between flex-1 max-w-md mx-auto">
                 {navItems.map(({ label, href }) => (
