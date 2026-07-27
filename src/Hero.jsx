@@ -191,10 +191,12 @@ export default function Hero() {
                 <br />
                 <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">AI‑креатор & Контент‑менеджер</span>
               </h1>
-              <p className="text-[#525a48] text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto mt-6 sm:mt-8">
-                Опыт более 5 лет. Создаю продающий визуальный контент для маркетплейсов
-                (Wildberries, Ozon, Яндекс Маркет) и соцсетей (Reels, TikTok).
-              </p>
+              <div className="px-5 sm:px-7 py-3 sm:py-4 rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 shadow-lg max-w-lg mx-auto mt-6 sm:mt-8">
+                <p className="text-[#4A1525] text-base sm:text-lg md:text-xl leading-relaxed text-center">
+                  Опыт более 5 лет. Создаю продающий визуальный контент для маркетплейсов
+                  (Wildberries, Ozon, Яндекс Маркет) и соцсетей (Reels, TikTok).
+                </p>
+              </div>
                             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
                 <button className="px-5 sm:px-6 py-2.5 sm:py-3 bg-white/15 backdrop-blur-xl border border-white/30 rounded-full text-[#4A1525] text-sm font-semibold shadow-lg hover:bg-white/25 transition-all">
                   Обсудить проект в Telegram
