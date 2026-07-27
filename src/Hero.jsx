@@ -19,7 +19,7 @@ export default function Hero() {
     setActiveVideo(i);
     if (videoRefs.current[i]) {
       videoRefs.current[i].currentTime = 0;
-      videoRefs.current[i].play();
+      videoRefs.current[i].play().catch(() => {});
     }
   };
 
