@@ -189,7 +189,7 @@ export default function Hero() {
               <div className="px-5 sm:px-7 py-3 sm:py-4 rounded-2xl bg-white/15 backdrop-blur-xl border border-white/30 shadow-lg max-w-lg mx-auto mt-6 sm:mt-8">
                 <p className="text-[#4A1525] text-base sm:text-lg md:text-xl leading-relaxed text-center">
                   Опыт более 5 лет. Создаю продающий визуальный контент для маркетплейсов
-                  (Wildberries, Ozon, Яндекс Маркет) и соцсетей (Reels, TikTok).
+                  (Wildberries, Ozon, Яндекс Маркет) и соцсетей (вертикальные видео).
                 </p>
               </div>
                             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
