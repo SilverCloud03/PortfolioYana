@@ -193,9 +193,14 @@ export default function Hero() {
                 </p>
               </div>
                             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
-                <button className="px-5 sm:px-6 py-2.5 sm:py-3 bg-white/15 backdrop-blur-xl border border-white/30 rounded-full text-[#4A1525] text-sm font-semibold shadow-lg hover:bg-white/25 transition-all">
-                  Обсудить проект в Telegram
-                </button>
+                <a
+                  href="https://t.me/yana_dcontent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 sm:px-6 py-2.5 sm:py-3 bg-white/15 backdrop-blur-xl border border-white/30 rounded-full text-[#4A1525] text-sm font-semibold shadow-lg hover:bg-white/25 transition-all"
+                >
+                  @yana_dcontent
+                </a>
               </div>
             </div>
           </div>
@@ -358,10 +363,12 @@ export default function Hero() {
               Связаться на Kwork
             </a>
             <a
-              href="#"
+              href="https://t.me/yana_dcontent"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full py-3.5 sm:py-4 border-2 border-white rounded-full text-white text-base sm:text-lg font-semibold tracking-wide hover:bg-white/10 transition-all"
             >
-              Обсудить проект в тг
+              @yana_dcontent
             </a>
           </div>
         </div>
