@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react';
 import { Menu, X } from 'lucide-react';
 
+const base = import.meta.env.BASE_URL || '/';
+
 const navItems = [
   { label: 'Портфолио', href: '#portfolio' },
   { label: 'FAQ', href: '#faq' },
@@ -89,7 +91,7 @@ export default function Hero() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/bg.mp4" type="video/mp4" />
+          <source src={base + "bg.mp4"} type="video/mp4" />
         </video>
 
         
@@ -185,7 +187,7 @@ export default function Hero() {
               <h1 className="text-[#4A1525] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-[-0.02em]">
                 <span className="inline-flex items-center justify-center gap-3 sm:gap-4">
                   Яна
-                  <img src="/avatar.png" alt="" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover -translate-y-1.5 sm:-translate-y-2 ring-2 ring-white/50 animate-float" />
+                  <img src={base + "avatar.png"} alt="" className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full object-cover -translate-y-1.5 sm:-translate-y-2 ring-2 ring-white/50 animate-float" />
                 </span>
                 <br />
                 <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">AI‑креатор & Контент‑менеджер</span>
@@ -222,8 +224,8 @@ export default function Hero() {
               onClick={() => handleClick(0)}
             >
               <div className="relative w-full h-full">
-                <img src="/showergel.webp" alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 0 ? 'opacity-0' : 'opacity-100'}`} />
-                <video ref={el => videoRefs.current[0] = el} src="/showergel.mp4" muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 0 ? 'opacity-100' : 'opacity-0'}`} />
+                <img src={base + "showergel.webp"} alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 0 ? 'opacity-0' : 'opacity-100'}`} />
+                <video ref={el => videoRefs.current[0] = el} src={base + "showergel.mp4"} muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 0 ? 'opacity-100' : 'opacity-0'}`} />
               </div>
             </div>
 
@@ -234,8 +236,8 @@ export default function Hero() {
               onClick={() => handleClick(1)}
             >
               <div className="relative w-full h-full">
-                <img src="/airhumidifier.webp" alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 1 ? 'opacity-0' : 'opacity-100'}`} />
-                <video ref={el => videoRefs.current[1] = el} src="/airhumidifier.mp4" muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 1 ? 'opacity-100' : 'opacity-0'}`} />
+                <img src={base + "airhumidifier.webp"} alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 1 ? 'opacity-0' : 'opacity-100'}`} />
+                <video ref={el => videoRefs.current[1] = el} src={base + "airhumidifier.mp4"} muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 1 ? 'opacity-100' : 'opacity-0'}`} />
               </div>
             </div>
 
@@ -246,8 +248,8 @@ export default function Hero() {
               onClick={() => handleClick(2)}
             >
               <div className="relative w-full h-full">
-                <img src="/cat.webp" alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 2 ? 'opacity-0' : 'opacity-100'}`} />
-                <video ref={el => videoRefs.current[2] = el} src="/cat.mp4" muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 2 ? 'opacity-100' : 'opacity-0'}`} />
+                <img src={base + "cat.webp"} alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 2 ? 'opacity-0' : 'opacity-100'}`} />
+                <video ref={el => videoRefs.current[2] = el} src={base + "cat.mp4"} muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 2 ? 'opacity-100' : 'opacity-0'}`} />
               </div>
             </div>
 
@@ -258,8 +260,8 @@ export default function Hero() {
               onClick={() => handleClick(3)}
             >
               <div className="relative w-full h-full">
-                <img src="/case.webp" alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 3 ? 'opacity-0' : 'opacity-100'}`} />
-                <video ref={el => videoRefs.current[3] = el} src="/case.mp4" muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 3 ? 'opacity-100' : 'opacity-0'}`} />
+                <img src={base + "case.webp"} alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 3 ? 'opacity-0' : 'opacity-100'}`} />
+                <video ref={el => videoRefs.current[3] = el} src={base + "case.mp4"} muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 3 ? 'opacity-100' : 'opacity-0'}`} />
               </div>
             </div>
 
@@ -270,8 +272,8 @@ export default function Hero() {
               onClick={() => handleClick(4)}
             >
               <div className="relative w-full h-full">
-                <img src="/spange.webp" alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 4 ? 'opacity-0' : 'opacity-100'}`} />
-                <video ref={el => videoRefs.current[4] = el} src="/spange.mp4" muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 4 ? 'opacity-100' : 'opacity-0'}`} />
+                <img src={base + "spange.webp"} alt="" className={`w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 4 ? 'opacity-0' : 'opacity-100'}`} />
+                <video ref={el => videoRefs.current[4] = el} src={base + "spange.mp4"} muted loop playsInline className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-300 ${activeVideo === 4 ? 'opacity-100' : 'opacity-0'}`} />
               </div>
             </div>
           </div>
